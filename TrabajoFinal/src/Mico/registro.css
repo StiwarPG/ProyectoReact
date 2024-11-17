@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fondoregistroysesion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer .iconos-sociales {
+    margin-top: 10px;
+}
+
+footer .iconos-sociales a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .iconos-sociales img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer .iconos-sociales img:hover {
+    transform: scale(1.1);
+    filter: invert(75%);
+}
+
+
+footer h3 {
+    margin: 0;
+}
+
+footer img {
+    vertical-align: middle;
+} 
+
+.cuadro-login {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cuadro-login p {
+    margin: 0;
+}
+
+.cuadro-login a {
+    color: #003cff;
+    text-decoration: none;
+}
+
+.cuadro-login a:hover {
+    color: #000;
+}
+
