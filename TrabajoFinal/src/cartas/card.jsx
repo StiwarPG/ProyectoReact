@@ -1,5 +1,5 @@
 import React from 'react';
-import './estilos/style.css';
+import '../estilos/style.css';
 
 export function CardInfoComp({ nombre, imagen, precio, onMoreInfo }) {
   return (
@@ -10,11 +10,12 @@ export function CardInfoComp({ nombre, imagen, precio, onMoreInfo }) {
       <div className="card-body">
         <img src={imagen} alt={nombre} className="shirt-image" />
         <p className="card-text">
-          <strong>Precio:</strong> {precio} <br />
+          <strong>Precio:</strong> {precio}
         </p>
-        <a href="#" className="card-link" onClick={onMoreInfo}>Más información...</a>
+        <button className="card-link" onClick={onMoreInfo}>
+          Más información...
+        </button>
       </div>
     </div>
   );
 }
-
