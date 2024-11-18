@@ -1,13 +1,49 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Fútbol y Baloncesto</title>
+<link rel="stylesheet" href="./src/estilos/index.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="logo"></div>
+    
+    <a href="#">Quienes Somos</a>
+
+    <div class="dropdown">
+        <button class="dropbtn"  onclick="window.location.href='./src/futbol/general/index.html';">Fútbol</button>
+        <div class="dropdown-content">
+        <a href="./src/futbol/Camisas/index.html">Camisas</a>
+        <a href="./src/futbol/pantaloneta/index.html">Pantaloneta</a>
+        <a href="./src/futbol/zapatos/index.html">Tenis</a>
+    </div>
+    </div>
+    
+
+    <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='./src/basquet/general/index.html';">Baloncesto</button>
+    <div class="dropdown-content">
+        <a href="./src/basquet/petos/index.html">Petos</a>
+        <a href="./src/basquet/pantaloneta/index.html">Pantaloneta</a>
+        <a href="./src/basquet/zapatos/index.html">Tenis</a>
+    </div>
+    </div>
+    
+    <div class="right-icons">
+    <a href="./src/sesion/inicio.html"> iniciar sesion</a>
+    <a class="cart-icon">🛒</a>
+    <div class="profile-icon">"foto de perfil"</div>
+    </div>
+</nav>
+
+<div class="container">
+    <button class="btn-futbol" onclick="window.location.href='./src/futbol/general/index.html';">Fútbol</button>
+
+    <button class="btn-baloncesto" onclick="window.location.href='./src/basquet/general/index.html';" >Baloncesto</button>
+</div>
+</body>
 </html>
