@@ -1,0 +1,190 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('./img/fondoindex.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(177, 173, 173);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Botones del navbar */
+.navbar a,
+.dropbtn {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    margin-right: 15px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #d17c15, #000000);
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.dropbtn:hover {
+    background: linear-gradient(45deg, #1afb38, #000000);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #363636;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center; /* Centra el texto de los botones */
+    padding: 10px 0; /* Añade un poco de padding alrededor */
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 5px auto; /* Añade espacio entre los botones */
+    width: 80%; /* Asegura que los botones tengan un ancho uniforme */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Añade un fondo semitransparente */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #615e5e;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Iconos de la derecha */
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    transform: translateX(-30px);
+}
+
+.cart-icon {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(143, 140, 140);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    padding-top: 6rem;
+    box-sizing: border-box; 
+}
+
+.btn-futbol, .btn-baloncesto {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.btn-futbol:hover, .btn-baloncesto:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 8rem;
+    }
+
+    .btn-futbol, .btn-baloncesto {
+        width: auto;
+        max-width: none;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .right-icons {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a,
+    .dropbtn {
+        margin-bottom: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-icons {
+        justify-content: space-between;
+        width: 100%;
+    }
+}

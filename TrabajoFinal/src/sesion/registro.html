@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" type="text/css" href="../estilos/sesion/registro.css"> 
+</head>
+<body>
+    <h2>Formulario de registro</h2>
+    <form action="/submit_form" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br>
+        
+        <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+        <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required><br>
+
+        <label for="documento_numero">Documento:</label>
+        <input type="text" id="documento_numero" name="documento_numero" required><br>
+        
+        <label for="documento_tipo">Tipo de documento:</label>
+        <select id="documento_tipo" name="documento_tipo">
+            <option value="1">Tarjeta de identidad</option>
+            <option value="2">Cédula de ciudadanía</option>
+            <option value="3">Cédula extranjera</option>
+            <option value="4">Otro</option>
+        </select><br>
+        
+        <label for="aceptar_terminos">Aceptar Términos y Condiciones:</label><br>
+        <input type="checkbox" id="aceptar_terminos" name="aceptar_terminos" required><br>
+        
+        <input type="submit" value="Registrarse">
+    </form>
+
+    <div class="cuadro-login">
+        <p>¿Ya tienes una cuenta? <a href="inicio.html">Haz clic aquí</a></p>
+    </div>
+
+    <footer>
+        <h3>@creditos 2025</h3>
+    </footer>
+</body>
+</html>
