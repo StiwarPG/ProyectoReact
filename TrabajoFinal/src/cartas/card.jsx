@@ -1,5 +1,5 @@
 import React from 'react';
-import '../estilos/style.css';
+import '../estilos/cartas/style.css';
 
 export function CardInfoComp({ nombre, imagen, precio, onMoreInfo }) {
   return (
