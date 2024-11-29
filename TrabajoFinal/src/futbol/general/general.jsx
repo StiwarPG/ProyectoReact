@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { productos as productosPetos } from '../Camisas/futbol.jsx';
+import { productos as productosCamisas } from '../Camisas/futbol.jsx';
 import { productos as productosZapatos } from '../zapatos/futbol.jsx';
 import { productos as productospantaloneta } from '../pantaloneta/futbol.jsx';
 import { CardInfoComp } from '../../cartas/card';
 import { CartaAmpliada } from '../../cartas/max';
-import '../../estilos/cartas/style2.css';
-
-const general = [...productosPetos, ...productospantaloneta, ...productosZapatos];
+import '../../estilos/cartas/style.css';
+const general = [...productosCamisas, ...productospantaloneta, ...productosZapatos];
 
 export function AppMultiple() {
   const [selectedShirt, setSelectedShirt] = useState(null);
@@ -17,6 +16,11 @@ export function AppMultiple() {
 
   return (
     <div className="app-container">
+      <header className="header">
+      <div className="icon-basketball"></div>
+      <h1>General</h1>
+      <div className="icon-basketball"></div>
+    </header>
       <div className="card-container">
         {general.map((camisa) => (
           <CardInfoComp
@@ -33,12 +37,3 @@ export function AppMultiple() {
     </div>
   );
 }
-
-  
-  import { createRoot } from 'react-dom/client'
-  createRoot(document.getElementById('root')).render(
-    <>
-        <AppMultiple/>
-    </>
-  );
-  

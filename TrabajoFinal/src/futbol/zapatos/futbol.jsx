@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { CardInfoComp } from '../../cartas/card';
 import { CartaAmpliada } from '../../cartas/max';
-import '../../estilos/cartas/style2.css';
-
+import '../../estilos/cartas/style.css';
 export const productos = [
     {
       id: 1100,
@@ -195,6 +194,11 @@ export function AppMultiple() {
 
   return (
     <div className="app-container">
+          <header className="header">
+      <div className="icon-basketball"></div>
+      <h1>Zapatos</h1>
+      <div className="icon-basketball"></div>
+    </header>
       <div className="card-container">
         {productos.map((camisa) => (
           <CardInfoComp
@@ -211,10 +215,3 @@ export function AppMultiple() {
     </div>
   );
 }
-
-import { createRoot } from 'react-dom/client'
-createRoot(document.getElementById('root')).render(
-  <>
-      <AppMultiple/>
-  </>
-);
