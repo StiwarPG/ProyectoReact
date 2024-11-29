@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
-import { productos as productosPetos } from '../petos/basquet';
-import { productos as productosZapatos } from '../zapatos/basquet.jsx';
-import { productos as productospantaloneta } from '../pantaloneta/basquet.jsx';
-import { CardInfoComp } from '../../cartas/card';
-import { CartaAmpliada } from '../../cartas/max';
-import '../../estilos/cartas/style.css';
+import { productos as productosPetosB } from '../basquet/petos/basquet.jsx';
+import { productos as productosZapatosB } from '../basquet/zapatos/basquet.jsx';
+import { productos as productospantalonetaB } from '../basquet/pantaloneta/basquet.jsx';
 
-const general = [...productosPetos, ...productospantaloneta, ...productosZapatos];
+import { productos as productosCamisasF } from '../futbol/Camisas/futbol.jsx';
+import { productos as productosZapatosF } from '../futbol/zapatos/futbol.jsx';
+import { productos as productospantalonetaF } from '../futbol/pantaloneta/futbol.jsx';
 
-export function AppMultiple() {
+import { CardInfoComp } from '../cartas/card';
+import { CartaAmpliada } from '../cartas/max';
+import '../estilos/cartas/style.css';
+
+const general = [...productosPetosB,...productosCamisasF, ...productospantalonetaB,...productospantalonetaF, ...productosZapatosB,...productosZapatosF];
+
+export function HomePage() {
   const [selectedShirt, setSelectedShirt] = useState(null);
 
   const handleMoreInfo = (shirt) => setSelectedShirt(shirt);

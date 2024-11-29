@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { CardInfoComp } from '../../cartas/card';
 import { CartaAmpliada } from '../../cartas/max';
 import '../../estilos/cartas/style.css';
-
 export const productos = [
   {
     id: 200,
@@ -196,7 +195,13 @@ export function AppMultiple() {
   const closeShirtInfo = () => setSelectedShirt(null);
 
   return (
+    
     <div className="app-container">
+       <header className="header">
+      <div className="icon-basketball"></div>
+      <h1>Petos</h1>
+      <div className="icon-basketball"></div>
+    </header>
       <div className="card-container">
         {productos.map((camisa) => (
           <CardInfoComp
@@ -207,6 +212,7 @@ export function AppMultiple() {
         ))}
       </div>
 
+
       {selectedShirt && (
         <CartaAmpliada shirt={selectedShirt} closeShirtInfo={closeShirtInfo} />
       )}
@@ -214,9 +220,3 @@ export function AppMultiple() {
   );
 }
 
-import { createRoot } from 'react-dom/client'
-createRoot(document.getElementById('root')).render(
-  <>
-      <AppMultiple/>
-  </>
-);

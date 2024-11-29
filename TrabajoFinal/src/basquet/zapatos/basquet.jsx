@@ -195,6 +195,11 @@ export function AppMultiple() {
 
   return (
     <div className="app-container">
+       <header className="header">
+      <div className="icon-basketball"></div>
+      <h1>Zapatos</h1>
+      <div className="icon-basketball"></div>
+    </header>
       <div className="card-container">
         {productos.map((camisa) => (
           <CardInfoComp
@@ -212,9 +217,3 @@ export function AppMultiple() {
   );
 }
 
-import { createRoot } from 'react-dom/client'
-createRoot(document.getElementById('root')).render(
-  <>
-      <AppMultiple/>
-  </>
-);
