@@ -1,0 +1,139 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(177, 173, 173);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-link, 
+.navbar a, 
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: gray; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    margin-left:5px;
+    margin-right:5px;
+
+}
+
+.nav-link:hover, 
+.navbar a:hover, 
+.dropbtn:hover {
+    background-color: white; 
+    color: gray; 
+    margin: 5px;
+    transform: scale(1.1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(198, 178, 178, 0);
+    min-width: 160px;
+    /* box-shadow: 0 4px 8px rgb(255, 255, 255); */
+    z-index: 1;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    transform: translateX(-30px);
+}
+
+
+
+
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(143, 140, 140);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 8rem;
+    }
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .right-icons {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a,
+    .dropbtn {
+        margin-bottom: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-icons {
+        justify-content: space-between;
+        width: 100%;
+    }
+}

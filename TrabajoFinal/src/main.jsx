@@ -1,9 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import  {AppMultiple} from './basquet/petos/basquet.jsx'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-createRoot(document.getElementById('root')).render(
-  <>
-      <AppMultiple/>
-  </>
-);
+
+import { AppPrincipal } from './navegation/Principal'
+
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(
+    <>
+        <AppPrincipal /> 
+    </>
+)

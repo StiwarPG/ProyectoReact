@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2'; // Asegúrate de tener SweetAlert2 instalado
-import '../estilos//cartas/style.css';
+import '../estilos/cartas/style.css';
 
 
 export function CartaAmpliada({ shirt, closeShirtInfo }) {

@@ -4,9 +4,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(90deg, #ffb74d 25%, #ffffff 50%, #ffb74d 75%);
-  font-family: Arial, sans-serif;
-  flex-direction: column;
+  background: linear-gradient(90deg, #949494 25%, #ffffff 50%, #949494  75%);
 }
 
 .card-container {
@@ -19,16 +17,16 @@ body {
   width: 100%;
 }
 
-/* Estilo de las cartas */
+
 .card {
-  background: #f7f3e9; /* Color madera clara */
-  border: 1px solid #ffcc80; /* Detalles en naranja suave */
+  background: #ceccc9; 
+  border: 1px solid #878582; 
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 250px;
-  height: 360px;
+  height: 38  0px;
   display: flex;
   flex-direction: column;
 }
@@ -39,7 +37,7 @@ body {
 }
 
 .card-header {
-  background: #e65100; /* Naranja intenso */
+  background: #5c5b5a; 
   color: #ffffff;
   padding: 10px;
   border-radius: 10px 10px 0 0;
@@ -79,18 +77,17 @@ body {
 }
 
 .card-link:hover {
-  background-color: #f64711;
+  background-color: #959595;
   color: #ffffff;
 }
 
-/* Estilos de la carta grande (modal) */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +122,7 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #d84315; /* Botón de cerrar */
+  background-color: #ff0000;
   color: white;
   border: none;
   border-radius: 50%;
@@ -135,12 +132,12 @@ body {
 }
 
 .close-btn:hover {
-  background-color: #bf360c;
+  background-color: #000000;
 }
 
-/* Estilos del botón de añadir al carrito */
+
 .add-to-cart {
-  background-color: #ff6f00; /* Botón principal */
+  background-color: #454343; 
   color: white;
   font-weight: bold;
   border: none;
@@ -155,14 +152,14 @@ body {
 }
 
 .add-to-cart:hover {
-  background-color: #e65100;
+  background-color: #767676;
 }
 
 .add-to-cart i {
   margin-right: 10px;
 }
 
-/* Responsividad */
+
 @media (max-width: 1024px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
@@ -188,7 +185,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* Encabezado de Petos */
+
 .header {
   display: flex;
   align-items: center;
