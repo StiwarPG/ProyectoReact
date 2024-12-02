@@ -1,0 +1,107 @@
+.cart-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #ceccc9;
+  color: #1b1b1b; 
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.cart-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c2a2a;
+}
+
+
+.cart-container button {
+  background-color: #242424; 
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cart-container button:hover {
+  background-color: #4f4f4f;
+}
+
+.cart-container p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f4f4; 
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cart-item p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  color: #444;
+}
+
+.cart-item button {
+  background-color: #454343;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #403f3f;
+}
+
+.cart-container > p:last-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #974a4a; 
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-group button {
+  background-color: #1abc9c; 
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.button-group button:hover {
+  background-color: #33be3a;
+}
