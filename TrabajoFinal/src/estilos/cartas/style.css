@@ -4,7 +4,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(90deg, #949494 25%, #ffffff 50%, #949494  75%);
+  background: linear-gradient(90deg, #949494 25%, #ffffff 50%, #949494 75%);
 }
 
 .card-container {
@@ -17,7 +17,6 @@ body {
   width: 100%;
 }
 
-
 .card {
   background: #ceccc9; 
   border: 1px solid #878582; 
@@ -26,9 +25,10 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 250px;
-  height: 38  0px;
+  height: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -61,11 +61,9 @@ body {
   margin: 10px 0;
   font-size: 15px;
   color: #444;
-  flex-grow: 1;
 }
 
 .card-link {
-  margin-top: -1px;
   padding: 10px 15px;
   background-color: #000000;
   color: #ffffff;
@@ -135,7 +133,6 @@ body {
   background-color: #000000;
 }
 
-
 .add-to-cart {
   background-color: #454343; 
   color: white;
@@ -159,6 +156,15 @@ body {
   margin-right: 10px;
 }
 
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card-buttons button {
+  width: 48%;
+}
 
 @media (max-width: 1024px) {
   .card-container {

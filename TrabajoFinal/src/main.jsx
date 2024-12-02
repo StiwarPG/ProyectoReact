@@ -1,15 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { store } from './carrito/store';
+import { AppPrincipal } from './navegation/Principal';
 
-
-import { AppPrincipal } from './navegation/Principal'
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <>
-        <AppPrincipal /> 
-    </>
-)
+  <Provider store={store}>
+    <AppPrincipal />
+  </Provider>
+);
+  
