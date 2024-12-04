@@ -49,12 +49,12 @@ export function AppPrincipal() {
                 </div>
 
                 <div className="right-icons">
-                <a href="http://localhost:4000/api/index"> iniciar sesion</a>
+                <a href="../components/CrudApp.jsx"> iniciar sesion</a>
                 <Link to="/cart" className="nav-link">Carrito 🛒</Link>
                 
                 <div className="profile-icon">"foto de perfil"</div>
                 </div>
-                </nav>
+                </nav> 
 
             <Routes>
                 <Route path="/" element={<HomePage />} />
