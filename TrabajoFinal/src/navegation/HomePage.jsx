@@ -27,7 +27,7 @@ export function HomePage() {
       <div className="card-container">
         {productos.map((camisa) => (
           <CardInfoComp
-            key={camisa.id}
+            key={camisa._id}
             {...camisa}
             onMoreInfo={() => handleMoreInfo(camisa)}
           />
