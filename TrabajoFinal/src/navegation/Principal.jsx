@@ -51,6 +51,7 @@ export function AppPrincipal() {
                 <div className="right-icons">
                 <a href="../../sesion/inicio.html"> iniciar sesion</a>
                 <Link to="/cart" className="nav-link">Carrito 🛒</Link>
+                
                 <div className="profile-icon">"foto de perfil"</div>
                 </div>
                 </nav>

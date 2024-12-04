@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeItemFromCart, addItemToCart, clearCart } from './cart/cartSlice';
 import '../estilos/cartas/style2.css';
 
+const fetchProducts = async () => {
+  try {
+    const response = await fetch('https://api.example.com/products'); 
+    const data = await response.json();
+    return data; 
+  } catch (error) {
+    console.error('Error fetching products:', error);
+  }
+};
+
 export function Cart() {
-  const { items, totalQuantity } = useSelector(state => state.cart);
+  const { items, totalQuantity } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    const loadProducts = async () => {
+      const products = await fetchProducts();
+
+    };
+
+    loadProducts();
+  }, [dispatch]);
 
   const totalAPagar = items.reduce(
     (total, item) => total + item.precio * item.quantity,
@@ -20,7 +40,7 @@ export function Cart() {
         <p>El carrito está vacío.</p>
       ) : (
         <div>
-          {items.map(item => (
+          {items.map((item) => (
             <div key={item.id} className="cart-item">
               <img src={item.imagen} alt={item.nombre} className="cart-image" />
               <p>{item.nombre}</p>
