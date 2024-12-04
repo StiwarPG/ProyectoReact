@@ -16,12 +16,12 @@ export function Cart() {
       ) : (
         <div>
           {items.map(item => (
-            <div key={item.id} className="cart-item">
+            <div key={item._id} className="cart-item">
               <img src={item.imagen} alt={item.nombre} className="cart-image" />
               <p>{item.nombre}</p>
               <p>Precio: {item.precio}</p>
               <p>Cantidad: {item.quantity}</p>
-              <button onClick={() => dispatch(removeItemFromCart(item.id))}>
+              <button onClick={() => dispatch(removeItemFromCart(item._id))}>
                 Eliminar
               </button>
             </div>
