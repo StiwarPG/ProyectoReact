@@ -16,7 +16,12 @@ export function HomePage() {
     <div className="app-container">
       <header className="header">
         <div className="icon-basketball"></div>
-        <h1>General</h1>
+        <h1>
+          <img src="TrabajoFinal/src/estilos/img/fondoregistroysesion.jpg" alt="" />
+        </h1>
+        <h1>
+          
+        </h1>
         <div className="icon-basketball"></div>
       </header>
       <div className="card-container">

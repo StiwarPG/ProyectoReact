@@ -28,11 +28,11 @@ export function AppMultiple() {
     if (loading) return <p>Cargando...</p>;
     if (error) return <p>Error: {error}</p>;
 
+
     // Filtrar productos por categoría y sección
     const productosFiltrados = productos.filter(
         (producto) => producto.categoria === "zapatos" && producto.section === "basquet"
     );
-
     return (
         <div className="app-container">
             <header className="header">

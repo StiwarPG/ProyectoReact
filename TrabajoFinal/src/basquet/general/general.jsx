@@ -50,6 +50,7 @@ export function AppMultiple() {
                 ))}
             </div>
 
+
             {selectedShirt && (
                 <CartaAmpliada
                     shirt={selectedShirt}

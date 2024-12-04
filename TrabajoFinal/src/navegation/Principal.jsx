@@ -72,5 +72,6 @@ export function AppPrincipal() {
                 <Route path="/cart" element={<Cart />} />
             </Routes>
         </Router>
+        
     );
 }
