@@ -4,7 +4,8 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(90deg, #949494 25%, #ffffff 50%, #949494 75%);
+  background: rgba(100, 100, 100, 0.753);
+  /*font-style: ; */
 }
 
 .card-container {
@@ -18,8 +19,8 @@ body {
 }
 
 .card {
-  background: #ceccc9; 
-  border: 1px solid #878582; 
+  background: #ffffff; 
+  border: 1px solid #000000; 
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -37,8 +38,8 @@ body {
 }
 
 .card-header {
-  background: #5c5b5a; 
-  color: #ffffff;
+  background: #d8d6d6; 
+  color: #000000;
   padding: 10px;
   border-radius: 10px 10px 0 0;
   text-align: center;
@@ -65,7 +66,7 @@ body {
 
 .card-link {
   padding: 10px 15px;
-  background-color: #000000;
+  background-color: #b80000;
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
@@ -75,8 +76,8 @@ body {
 }
 
 .card-link:hover {
-  background-color: #959595;
-  color: #ffffff;
+  background-color: #b80000;
+  color: #acacac;
 }
 
 .overlay {
@@ -134,7 +135,7 @@ body {
 }
 
 .add-to-cart {
-  background-color: #454343; 
+  background-color: #097000; 
   color: white;
   font-weight: bold;
   border: none;
@@ -149,7 +150,8 @@ body {
 }
 
 .add-to-cart:hover {
-  background-color: #767676;
+  background-color: #097000;
+  color: #acacac;
 }
 
 .add-to-cart i {
@@ -196,15 +198,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
   bottom: -80px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 20px auto;
   width: 90%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
+  background-image: url(/TrabajoFinal/src/estilos/img/fondoregistroysesion.png);
 }
 
 .header h1 {
@@ -212,4 +210,19 @@ body {
   font-weight: bold;
   color: #000;
   margin: 0 20px;
+}
+
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  flex: 1;
+  padding: 20px;
+  color: white;
 }
