@@ -18,10 +18,10 @@ export function AppMultiple() {
                 return response.json();
             })
             .then((data) => {
-                // Convertimos el precio a número
+
                 const productosConPrecioNumerico = data.map((producto) => ({
                     ...producto,
-                    precio: Number(producto.precio), // Aseguramos que precio sea un número
+                    precio: Number(producto.precio),
                 }));
                 setProductos(productosConPrecioNumerico);
             })

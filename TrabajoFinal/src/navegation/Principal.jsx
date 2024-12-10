@@ -17,6 +17,8 @@ import {AppMultiple as ZapatosB} from '../basquet/zapatos/basquet'
 /* carrito*/
 import { Cart } from '../carrito/cart.jsx';
 
+/*Crud*/
+import CrudApp from "../components/CrudApp";
 
 export function AppPrincipal() {
     return (
@@ -25,7 +27,6 @@ export function AppPrincipal() {
 
                 <div className="logo"></div>
                 <Link to="/" className="nav-link">Inicio</Link>
-                <a href="#">Quienes Somos</a>
 
                 <div className="dropdown">
                 <button className="dropbtn" >Fútbol</button>
@@ -49,7 +50,7 @@ export function AppPrincipal() {
                 </div>
 
                 <div className="right-icons">
-                <a href="../components/CrudApp.jsx"> iniciar sesion</a>
+                <a href="/crud"> Crud</a>
                 <Link to="/cart" className="nav-link">Carrito 🛒</Link>
                 
                 <div className="profile-icon">"foto de perfil"</div>
@@ -70,6 +71,8 @@ export function AppPrincipal() {
                 <Route path="/Zapatos/basquet" element={<ZapatosB />} />
                 /*carrito*/
                 <Route path="/cart" element={<Cart />} />
+                /*crud*/
+                <Route path="/crud" element={<CrudApp />} />
             </Routes>
         </Router>
         

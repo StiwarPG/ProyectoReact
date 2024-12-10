@@ -11,14 +11,21 @@ export function AppMultiple() {
 
     useEffect(() => {
         fetch("http://localhost:4000/api/productos")
-            .then(response => {
+            .then((response) => {
                 if (!response.ok) {
                     throw new Error("Error al obtener los datos de la API");
                 }
                 return response.json();
             })
-            .then(data => setProductos(data))
-            .catch(err => setError(err.message))
+            .then((data) => {
+
+                const productosConPrecioNumerico = data.map((producto) => ({
+                    ...producto,
+                    precio: Number(producto.precio),
+                }));
+                setProductos(productosConPrecioNumerico);
+            })
+            .catch((err) => setError(err.message))
             .finally(() => setLoading(false));
     }, []);
 
@@ -28,16 +35,15 @@ export function AppMultiple() {
     if (loading) return <p>Cargando...</p>;
     if (error) return <p>Error: {error}</p>;
 
-
     const productosFiltrados = productos.filter(
-        (producto) => producto.section === "futbol"
+        (producto) =>
+            producto.section === "futbol"
     );
 
     return (
         <div className="app-container">
             <header className="header">
                 <div className="icon-basketball"></div>
-                <h1>General</h1>
                 <div className="icon-basketball"></div>
             </header>
             <div className="card-container">
@@ -59,3 +65,4 @@ export function AppMultiple() {
         </div>
     );
 }
+

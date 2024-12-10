@@ -56,7 +56,6 @@
     position: absolute;
     background-color: rgba(198, 178, 178, 0);
     min-width: 160px;
-    /* box-shadow: 0 4px 8px rgb(255, 255, 255); */
     z-index: 1;
     border-radius: 2px;
     overflow: hidden;
