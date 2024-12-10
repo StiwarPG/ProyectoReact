@@ -34,7 +34,6 @@ const cartSlice = createSlice({
         existingItem.quantity -= 1;
         state.totalQuantity -= 1;
       } else if (existingItem) {
-        // Eliminar el producto si la cantidad llega a 0
         state.items = state.items.filter(item => item.id !== action.payload);
         state.totalQuantity -= 1;
       }
