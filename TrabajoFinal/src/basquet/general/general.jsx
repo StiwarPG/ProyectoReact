@@ -18,10 +18,9 @@ export function AppMultiple() {
                 return response.json();
             })
             .then((data) => {
-                // Convertimos el precio a número
                 const productosConPrecioNumerico = data.map((producto) => ({
                     ...producto,
-                    precio: Number(producto.precio), // Aseguramos que precio sea un número
+                    precio: Number(producto.precio),
                 }));
                 setProductos(productosConPrecioNumerico);
             })
@@ -44,13 +43,12 @@ export function AppMultiple() {
         <div className="app-container">
             <header className="header">
                 <div className="icon-basketball"></div>
-                <h1>General</h1>
                 <div className="icon-basketball"></div>
             </header>
             <div className="card-container">
                 {productosFiltrados.map((producto, index) => (
                     <CardInfoComp
-                        key={`${producto._id}-${index}`} // Clave única usando `_id` e índice
+                        key={`${producto._id}-${index}`}
                         {...producto}
                         onMoreInfo={() => handleMoreInfo(producto)}
                     />
